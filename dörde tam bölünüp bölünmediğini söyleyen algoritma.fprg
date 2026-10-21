@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="d&#246;rde tam b&#246;l&#252;n&#252;p b&#246;l&#252;nmedi&#287;ini s&#246;yleyen algoritma"/>
+        <attribute name="authors" value="kucuk"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-08 10:12:06 &#214;S"/>
+        <attribute name="created" value="a3VjdWs7REVTS1RPUC1ISFM4NzFEOzIwMjYtMTAtMDg7MTA6MDk6Mjkgw5ZTOzMwMDk="/>
+        <attribute name="edited" value="a3VjdWs7REVTS1RPUC1ISFM4NzFEOzIwMjYtMTAtMDg7MTA6MTI6MDYgw5ZTOzE7MzEwNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="deger" type="Integer" array="False" size=""/>
+            <output expression="&quot;De&#287;er Giriniz:&quot;" newline="True"/>
+            <input variable="deger"/>
+            <if expression="deger%4==0">
+                <then>
+                    <output expression="&quot;D&#246;rde tam b&#246;l&#252;n&#252;yor&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;D&#246;rde Tam B&#246;l&#252;nm&#252;yor&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="&#231;al&#305;&#351;ma saati 40"/>
+        <attribute name="authors" value="kucuk"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-11 09:58:03 &#214;S"/>
+        <attribute name="created" value="a3VjdWs7REVTS1RPUC1ISFM4NzFEOzIwMjYtMTAtMTE7MDk6NDk6Mzcgw5ZTOzMwMTQ="/>
+        <attribute name="edited" value="a3VjdWs7REVTS1RPUC1ISFM4NzFEOzIwMjYtMTAtMTE7MDk6NTg6MDMgw5ZTOzE7MzExNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="calisilansaat, saatucreti" type="Real" array="False" size=""/>
+            <output expression="&quot;&#199;al&#305;&#351;ma saati giriniz:&quot;" newline="True"/>
+            <input variable="calisilansaat"/>
+            <output expression="&quot;Saat &#252;creti giriniz:&quot;" newline="True"/>
+            <input variable="saatucreti"/>
+            <if expression="calisilansaat&lt;40">
+                <then>
+                    <assign variable="saatucreti" expression="calisilansaat*saatucreti"/>
+                    <output expression="saatucreti" newline="True"/>
+                </then>
+                <else>
+                    <if expression="calisilansaat&gt;=40">
+                        <then>
+                            <assign variable="saatucreti" expression="saatucreti*2"/>
+                            <output expression="saatucreti" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

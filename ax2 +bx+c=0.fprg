@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ax2 +bx+c=0"/>
+        <attribute name="authors" value="kucuk"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-11 09:44:02 &#214;S"/>
+        <attribute name="created" value="a3VjdWs7REVTS1RPUC1ISFM4NzFEOzIwMjYtMTAtMTE7MDk6MzQ6MjMgw5ZTOzMwMDM="/>
+        <attribute name="edited" value="a3VjdWs7REVTS1RPUC1ISFM4NzFEOzIwMjYtMTAtMTE7MDk6NDQ6MDIgw5ZTOzE7MzEwOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, delta, x1, x2" type="Real" array="False" size=""/>
+            <output expression="&quot;a'y&#305; giriniz&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;b'yi giriniz&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;c'yi giriniz&quot;" newline="True"/>
+            <input variable="c"/>
+            <assign variable="delta" expression="b * b - 4 * a * c"/>
+            <if expression="delta&lt;0">
+                <then>
+                    <output expression="&quot;Denklemin reel k&#246;k&#252; yoktur.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="delta==0">
+                        <then>
+                            <assign variable="x1" expression="-b / (2 * a)"/>
+                            <output expression="&quot;Denklemin &#231;ak&#305;&#351;&#305;k (e&#351;it) iki k&#246;k&#252; vard&#305;r. K&#246;k: &quot; &amp; x1" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="x1" expression="(-b + delta ^ 0.5) / (2 * a)"/>
+                            <assign variable="x2" expression="(-b - delta ^ 0.5) / (2 * a)"/>
+                            <output expression="&quot;Denklemin iki farkl&#305; reel k&#246;k&#252; vard&#305;r. x1 = &quot; &amp; x1 &amp; &quot; ve x2 = &quot; &amp; x2" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

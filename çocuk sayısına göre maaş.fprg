@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="&#231;ocuk say&#305;s&#305;na g&#246;re maa&#351;"/>
+        <attribute name="authors" value="kucuk"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-11 09:34:20 &#214;S"/>
+        <attribute name="created" value="a3VjdWs7REVTS1RPUC1ISFM4NzFEOzIwMjYtMTAtMTE7MDk6MjU6NDYgw5ZTOzMwMDg="/>
+        <attribute name="edited" value="a3VjdWs7REVTS1RPUC1ISFM4NzFEOzIwMjYtMTAtMTE7MDk6MzQ6MjAgw5ZTOzE7MzEwOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="maas, cocuksayisi" type="Real" array="False" size=""/>
+            <output expression="&quot;Maa&#351; Giriniz:&quot;" newline="True"/>
+            <input variable="maas"/>
+            <output expression="&quot;&#199;ocuk Say&#305;s&#305; Giriniz:&quot;" newline="True"/>
+            <input variable="cocuksayisi"/>
+            <if expression="cocuksayisi&gt;=3">
+                <then>
+                    <assign variable="maas" expression="maas*0.15"/>
+                    <output expression="&quot;Zam Miktar&#305;:&quot; &amp; maas" newline="True"/>
+                </then>
+                <else>
+                    <if expression="cocuksayisi==2">
+                        <then>
+                            <assign variable="maas" expression="maas*0.10"/>
+                            <output expression="&quot;Zam Miktar&#305;:&quot; &amp; maas" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="cocuksayisi==1">
+                                <then>
+                                    <assign variable="maas" expression="maas*0.05"/>
+                                    <output expression="&quot;Zam Miktar&#305;:&quot; &amp; maas" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Yanl&#305;&#351; De&#287;er&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

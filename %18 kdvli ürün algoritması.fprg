@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="%18 kdvli &#252;r&#252;n algoritmas&#305;"/>
+        <attribute name="authors" value="kucuk"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-08 09:55:49 &#214;S"/>
+        <attribute name="created" value="a3VjdWs7REVTS1RPUC1ISFM4NzFEOzIwMjYtMTAtMDg7MDk6NDA6NDggw5ZTOzMwMTM="/>
+        <attribute name="edited" value="a3VjdWs7REVTS1RPUC1ISFM4NzFEOzIwMjYtMTAtMDg7MDk6NTU6NDkgw5ZTOzE7MzEyOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="deger, kdvlifiyat" type="Real" array="False" size=""/>
+            <output expression="&quot;L&#252;tfen de&#287;er giriniz: &quot;" newline="True"/>
+            <input variable="deger"/>
+            <assign variable="kdvlifiyat" expression="deger+deger*0.18"/>
+            <output expression="kdvlifiyat" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="mutlakdeger"/>
+        <attribute name="authors" value="kucuk"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-11 10:07:03 &#214;S"/>
+        <attribute name="created" value="a3VjdWs7REVTS1RPUC1ISFM4NzFEOzIwMjYtMTAtMTE7MTA6MDM6MDYgw5ZTOzI5OTI="/>
+        <attribute name="edited" value="a3VjdWs7REVTS1RPUC1ISFM4NzFEOzIwMjYtMTAtMTE7MTA6MDc6MDMgw5ZTOzE7MzEwMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, mutlakdeger" type="Real" array="False" size=""/>
+            <output expression="&quot;Say&#305; Giriniz:&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <if expression="sayi&lt;0">
+                <then>
+                    <assign variable="mutlakdeger" expression="sayi * -1"/>
+                    <output expression="&quot;mutlakdeger:&quot; &amp; mutlakdeger" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="mutlakdeger" expression="sayi"/>
+                    <output expression="&quot;Mutlakdeger: &quot; &amp; mutlakdeger" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
